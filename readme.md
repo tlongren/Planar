@@ -28,7 +28,7 @@ A bold, minimal (and responsive) theme for [AnchorCMS.](http://anchorcms.com)
 2. Done!
 
 ##Icons
-Icons are provided by [Genericons.](http://genericons.com) A little ironic, I know. You may use any of the icons available from that site. However, instead of using `class="genericon-[iconName]"` use `class="icon-[iconName]"`
+Icons are provided by [Genericons.](http://genericons.com) A little ironic, I know. You may use any of the icons available from that site. However, instead of using `<i class="genericon-[iconName]"></i>` use `<i class="icon-[iconName]"></i>`
 
 <small>A few less characters!</small>
 
