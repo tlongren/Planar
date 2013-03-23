@@ -338,6 +338,25 @@ time { font: 0.875em Georgia, serif; font-style: italic; color: #7ecefd; }
 
 ul.items { margin-left: 0; padding-left: 0; list-style: none; }
 
+ul.commentlist { list-style: none; padding: 0 0 0 0; }
+
+.comment { padding: 1em; position: relative; background-color: #24272b; margin-bottom: 2em; }
+
+.comment h5 { margin: .25em 0; }
+
+.comment time { font-size: .75em; }
+
+.comment .content { font-size: .75em; }
+
+.counter {position: absolute; right: 1em; bottom: 0; }
+
+@media only screen and (min-width: 600px) { .js .main-nav { max-width: 300px; }
+  .js .move { left: 300px; }
+  input, input[type='text'], input[type='email'], textarea { max-width: 50%; }
+  .search input[type='search'] { width: 96%; max-width: 96%; } }
+@media only screen and (min-width: 900px) { body { font-size: 1.2em; } }
+
+
 @media only screen and (min-width: 600px) { .js .main-nav { max-width: 300px; }
   .js .move { left: 300px; }
   input, input[type='text'], input, textarea { max-width: 50%; }
