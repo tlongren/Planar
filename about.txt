@@ -1,0 +1,5 @@
+Theme name:    Flat Anchor
+Description:   Bold colors and flat design
+Author name:   Stephen Sauceda
+Author site:   http://stephensauceda.com
+License:       http://licence.visualidiot.com
