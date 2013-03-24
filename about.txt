@@ -1,4 +1,4 @@
-Theme name:    Flat Anchor
+Theme name:    Planar
 Description:   Bold colors and flat design
 Author name:   Stephen Sauceda
 Author site:   http://stephensauceda.com
