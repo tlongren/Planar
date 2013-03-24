@@ -1,4 +1,4 @@
-#Flat Anchor
+#Planar
 
 A bold, minimal (and responsive) theme for [AnchorCMS.](http://anchorcms.com)
 
