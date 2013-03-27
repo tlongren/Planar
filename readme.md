@@ -12,20 +12,19 @@ A bold, minimal (and responsive) theme for [AnchorCMS.](http://anchorcms.com)
 
 ##Using your own logo
 
-###Method #1
-
 1. Copy your logo file to the theme's `img` directory
-2. Open `header.php`
-3. Modify line 91 with the name of your logo's file (as shown below)
-```
-    <img src="<?php echo theme_url(); ?>/img/your_logo.png" alt="">
-```
-4. Done!
+2. Open `functions.php`
+3. Modify line 69 with the name of your logo's file
 
-###Method #2
+*If you'd rather not use a logo, change the value of line 68 to* `false`
 
-1. Copy your logo file to the theme's `img` directory as `logo.png` and overwrite the file already there.
-2. Done!
+##Changing the header image
+
+1. Copy your header image to the theme's `img` directory
+2. Open `functions.php`
+3. Modify line 67 with the name of your header image
+
+*If you'd rather not use a header image, change the value of line 66 to* `false`
 
 ##Icons
 Icons are provided by [Genericons.](http://genericons.com) A little ironic, I know. You may use any of the icons available from that site. However, instead of using `<i class="genericon-[iconName]"></i>` use `<i class="icon-[iconName]"></i>`
