@@ -86,7 +86,7 @@
       <?php endif; ?>
     </nav>
 
-    <header class="main-header">
+    <header class="main-header" <?php if (theme_option('header_bg')): ?> style="background-image: url(<?php echo theme_option('header_image'); ?>)" <?php endif; ?> >
       <div class="logo">
         <figure>
           <a href="<?php echo base_url(); ?>"><img src="<?php echo theme_url(); ?>/img/logo.png" alt=""><?php echo site_name(); ?></a>

@@ -60,3 +60,11 @@ function twitter_account() {
 function twitter_url() {
 	return 'http://twitter.com/' . twitter_account();
 }
+
+// Theme Options
+set_theme_options(array(
+	'header_bg' => true,
+	'header_image' => theme_url('img/') . 'header.jpg',
+	'use_logo' => true,
+	'logo_image' => theme_url('img/') . 'logo.png'
+));
