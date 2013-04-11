@@ -1,0 +1,316 @@
+@import 'helpers.scss';
+@import 'fonts.scss';
+
+@include normalize();
+
+*, *:after, *:before {
+  @include box-sizing();
+  @include transition(all .4s ease-in);
+}
+
+$dark-blue: #3E454C;
+$darker-blue: #24272B;
+$light-blue: #7ECEFD;
+$white: #FFF;
+$pink: #F67D65;
+
+@mixin georgia() {
+  font: .875em Georgia,serif;
+}
+
+body {
+  color: $white;
+  background-color: $dark-blue;
+  font: 16px/1.875em 'Open Sans', Helvetica Neue, sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: anti-aliased;
+  overflow-x: hidden;
+}
+
+a {
+  color: $light-blue;
+  text-decoration: none;
+  &:hover {
+    color: darken($light-blue, 10%);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  color: $white;
+  a {
+    color: $white;
+  }
+}
+
+blockquote {
+  border-left: 3px solid $pink;
+  padding: .5em .5em .5em 1em;
+  @include georgia();
+  font-style: italic;
+  background-color: $darker-blue;
+}
+
+cite {
+  @include georgia();
+  font-style: italic;
+  margin-left: 2em;
+  color: $light-blue;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  font-size: .75em;
+  background-color: $darker-blue;
+  padding: .25em;
+  border-radius: 2px;
+}
+
+dt {
+  font-weight: 700;
+}
+
+table {
+  background-color: $darker-blue;
+  border-radius: 2px;
+}
+
+th {
+  background-color: $pink;
+}
+
+tr:nth-child(even) {
+  background-color: lighten($darker-blue, 5%);
+}
+
+td {
+  border: 1px solid $dark-blue;
+  padding: .5em;
+}
+
+figcaption {
+  font-size: .75em;
+}
+
+label {
+  display: block;
+  font-size: .875em;
+}
+
+input[type='text'], textarea, input[type='search'] {
+  width: 100%;
+  background-color: #2A2D32;
+  border-radius: 2px;
+  border: 1px solid #52585E;
+  font-size: .875em;
+  padding: .5em;
+  color: white;
+  font-weight: 300;
+}
+
+input {
+  @extend input[type='text'];
+  width: auto;
+}
+
+@include placeholder(#D7D0C3);
+
+small {
+  color: #d7d0c3;
+}
+
+.main-nav {
+  background-color: #24272B;
+  padding: .25em 2em;
+  @include transition(all .2s ease-in);
+  ul {
+    padding: 0;
+  }
+}
+
+.js .main-nav {
+  position: fixed;
+  height: 100%;
+  z-index: 100;
+  width: 70%;
+  overflow: scroll;
+  left: -100%;
+  @include box-shadow(inset -2px 0 5px rgba(0, 0, 0, .1));
+  @include transition(all .2s ease-in);
+}
+
+.js .main-nav.show {
+  left: 0;
+}
+
+.js .wrap, .js .main-header {
+  position: relative;
+  left: 0;
+  @include transition(all .2s ease-in);
+}
+
+.js .move {
+  left: 70%;
+  @include transition(all .2s ease-in);
+}
+
+input[type='submit'], button, input[type='reset'] {
+  background-color: $light-blue;
+  border: 1px solid darken($light-blue, 5%);
+  border-radius: 2px;
+  font-size: .875em;
+  color: $white;
+  padding: .5em;
+  &:hover {
+    background-color: darken($light-blue, 10%);
+  }
+}
+
+input[type='reset'] {
+  background-color: $pink;
+  border: 1px solid darken($pink, 5%);
+  &:hover {
+    background-color: darken($pink, 10%);
+  }
+}
+
+.search {
+  margin: 4em 0 1em 0;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #3A3D41;
+}
+
+.search input[type='search'] {
+  padding: .75em .5em;
+  font-size: .75em;
+}
+
+.twitter-link {
+  display: block;
+  margin: 2em auto;
+  text-align: center;
+  i {
+    font-size: 2em;
+  }
+}
+
+.navicon {
+  color: $white;
+  background-color: $light-blue;
+  padding: .5em;
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  &:hover {
+    color: $white;
+  }
+  i.icon-menu {
+    font-size: 2em;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+.main-header {
+  background: url('../img/header.jpg') no-repeat;
+  background-size: cover;
+  padding: 1em 0;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.logo {
+  text-align: center;
+  margin: 3em 0;
+  img {
+    margin: 1em auto;
+    display: block;
+  }
+  a {
+    font-size: 1.75em;
+    color: $white;
+  }
+}
+
+.post {
+  .wrap {
+    padding: 3em 0;
+  }
+  &:first-child {
+    background-color: #30353A;
+  }
+}
+
+.post:nth-child(n+3) .wrap {
+  border-top: 1px solid #52585E;
+}
+
+.post-title {
+  line-height: 1.4em;
+}
+
+time {
+  @include georgia();
+  font-style: italic;
+  color: $light-blue;
+}
+
+.pagination a {
+  color: $white;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2em;
+  background-color: $darker-blue;
+  padding: .25em .5em;
+  &:hover {
+    color: $light-blue;
+  }
+}
+
+.main-footer {
+  margin-top: 3em;
+  overflow: auto;
+  a {
+    display: inline-block;
+  }
+}
+
+.anchor {
+  float: right;
+}
+
+.main-footer .wrap {
+  padding: 3em 0;
+  border-top: 1px solid #52585E;
+}
+
+@media only screen and (min-width : 600px) {
+  .js .main-nav {
+    max-width: 300px;
+  }
+  .js .move {
+    left: 300px;
+  }
+  input, input[type='text'], textarea {
+    max-width: 50%;
+  }
+  .search input[type='search'] {
+    width: 96%;
+    max-width: 96%;
+  }
+}
+
+@media only screen and (min-width : 900px) {
+  body {
+    font-size: 1.2em;
+  }
+}
