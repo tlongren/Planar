@@ -303,7 +303,7 @@ input[type='reset']:hover { background-color: #f35435; }
 .navicon:hover { color: white; }
 .navicon i.icon-menu { font-size: 2em; vertical-align: middle; height: 1em; width: 1em; }
 
-.main-header { background: url(../img/header.jpg) no-repeat; background-size: cover; padding: 1em 0; }
+.main-header { background-repeat: no-repeat; background-size: cover; padding: 1em 0; }
 
 .wrap { width: 90%; max-width: 1000px; margin: 0 auto; }
 
