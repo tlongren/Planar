@@ -278,7 +278,7 @@ small { color: #d7d0c3; }
 .nav-title { font-weight: 300; }
 .main-nav ul { padding: 0; }
 
-.js .main-nav { position: fixed; height: 100%; z-index: 100; width: 70%; overflow: scroll; left: -100%; -webkit-box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
+.js .main-nav { position: fixed; height: 100%; z-index: 100; width: 70%; overflow: auto; left: -100%; -webkit-box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; transition: all 0.2s ease-in; }
 
 .js .main-nav.show { left: 0; -webkit-transition: all 0.4s ease-in; -moz-transition: all 0.4s ease-in; transition: all 0.2s ease-in;}
 
