@@ -137,7 +137,7 @@ small {
   height: 100%;
   z-index: 100;
   width: 70%;
-  overflow: scroll;
+  overflow: auto;
   left: -100%;
   @include box-shadow(inset -2px 0 5px rgba(0, 0, 0, .1));
   @include transition(all .2s ease-in);
